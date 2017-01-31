@@ -1,0 +1,3 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+$finish called at time : 560 ns : File "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sim_1/imports/FPGALab4/counter_natural_tb.v" Line 47

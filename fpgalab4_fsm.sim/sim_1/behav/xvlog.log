@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dffe
+INFO: [VRFC 10-311] analyzing module mux2v
+INFO: [VRFC 10-311] analyzing module mux3v
+INFO: [VRFC 10-311] analyzing module mux4v
+INFO: [VRFC 10-311] analyzing module mux16v
+INFO: [VRFC 10-311] analyzing module mux32v
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_natural.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_natural
+INFO: [VRFC 10-2458] undeclared symbol above_range, assumed default net type wire [/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_natural.v:10]
+INFO: [VRFC 10-2458] undeclared symbol below_range, assumed default net type wire [/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_natural.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.srcs/sim_1/imports/FPGALab4/counter_natural_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_natural_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/hgao17/cs233/fpgalab4_fsm/fpgalab4_fsm.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue May 10 20:52:16 2016
+# Process ID: 3175
+# Current directory: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1
+# Command line: vivado -log top_level.vds -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+# Log file: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/top_level.vds
+# Journal file: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_level.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /software/xilinx-2015/Vivado/2015.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1070.637 ; gain = 142.918 ; free physical = 1004 ; free virtual = 8858
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/top_level.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/.Xil/Vivado-3175-siebl-0218-25.ews.illinois.edu/realtime/clk_wiz_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz' (1#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/.Xil/Vivado-3175-siebl-0218-25.ews.illinois.edu/realtime/clk_wiz_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+	Parameter frequency bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (2#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized0' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+	Parameter frequency bound to: 250 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized0' (2#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider__parameterized1' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+	Parameter frequency bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider__parameterized1' (2#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/src/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter_natural' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_natural.v:1]
+INFO: [Synth 8-638] synthesizing module 'register' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/register.v:9]
+	Parameter width bound to: 4 - type: integer 
+	Parameter reset_value bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register' (3#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/register.v:9]
+INFO: [Synth 8-638] synthesizing module 'mux2v' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v' (4#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-256] done synthesizing module 'counter_natural' (5#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_natural.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_even' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_even.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter_even' (6#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/counter_even.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_odd' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_odd.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter_odd' (7#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_odd.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_three' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_three.v:1]
+INFO: [Synth 8-256] done synthesizing module 'counter_three' (8#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_three.v:1]
+INFO: [Synth 8-638] synthesizing module 'bcd2led' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/bcd2led.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd2led' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/bcd2led.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized0' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized0' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized1' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized1' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized2' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized2' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized3' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized3' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized4' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized4' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux4v' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:55]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized5' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized5' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized6' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized6' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-638] synthesizing module 'mux2v__parameterized7' [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+	Parameter width bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2v__parameterized7' (9#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:25]
+INFO: [Synth 8-256] done synthesizing module 'mux4v' (10#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/imports/FPGALab4/library.v:55]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (11#1) [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/top_level.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1110.137 ; gain = 182.418 ; free physical = 963 ; free virtual = 8818
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1110.137 ; gain = 182.418 ; free physical = 964 ; free virtual = 8818
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/.Xil/Vivado-3175-siebl-0218-25.ews.illinois.edu/dcp/clk_wiz_in_context.xdc] for cell 'clkwizard'
+Finished Parsing XDC File [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/.Xil/Vivado-3175-siebl-0218-25.ews.illinois.edu/dcp/clk_wiz_in_context.xdc] for cell 'clkwizard'
+Parsing XDC File [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/constrs_1/imports/FPGALab4/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/constrs_1/imports/FPGALab4/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/constrs_1/imports/FPGALab4/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1453.402 ; gain = 0.000 ; free physical = 792 ; free virtual = 8647
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3274 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 789 ; free virtual = 8643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 789 ; free virtual = 8643
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/.Xil/Vivado-3175-siebl-0218-25.ews.illinois.edu/dcp/clk_wiz_in_context.xdc, line 3).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 789 ; free virtual = 8643
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 780 ; free virtual = 8634
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'clkdivider_one' (clock_divider) to 'clkdivider_half'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clock_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clock_divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module counter_natural 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module counter_even 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module counter_odd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module counter_three 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 780 ; free virtual = 8634
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clkdivider_one/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_one/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_250/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_250/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_500/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_500/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_500/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_500/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_250/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_250/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_one/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdivider_one/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 783 ; free virtual = 8638
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:28 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 783 ; free virtual = 8638
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\ce/counter/q_reg[0] ) is unused and will be removed from module top_level.
+WARNING: [Synth 8-3332] Sequential element (\co/counter/q_reg[0] ) is unused and will be removed from module top_level.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 770 ; free virtual = 8624
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 770 ; free virtual = 8624
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clkwizard/clk_out' to pin 'clkwizard/bbstub_clk_out/O'
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 726 ; free virtual = 8580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 716 ; free virtual = 8571
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |CARRY4  |    24|
+|3     |LUT1    |    96|
+|4     |LUT2    |     6|
+|5     |LUT3    |     5|
+|6     |LUT4    |    18|
+|7     |LUT5    |    24|
+|8     |LUT6    |    23|
+|9     |MUXF7   |     5|
+|10    |FDRE    |   113|
+|11    |IBUF    |     9|
+|12    |OBUF    |    11|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------------------+------+
+|      |Instance         |Module                        |Cells |
++------+-----------------+------------------------------+------+
+|1     |top              |                              |   335|
+|2     |  ce             |counter_even                  |    11|
+|3     |    counter      |register_2                    |    11|
+|4     |  clkdivider_250 |clock_divider__parameterized0 |    89|
+|5     |  clkdivider_500 |clock_divider__parameterized1 |    86|
+|6     |  clkdivider_one |clock_divider                 |    83|
+|7     |  cn             |counter_natural               |    16|
+|8     |    counter      |register_1                    |    16|
+|9     |  co             |counter_odd                   |    11|
+|10    |    counter      |register_0                    |    11|
+|11    |  ct             |counter_three                 |    18|
+|12    |    counter      |register                      |    18|
++------+-----------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.402 ; gain = 88.438 ; free physical = 709 ; free virtual = 8563
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 1453.402 ; gain = 525.684 ; free physical = 709 ; free virtual = 8563
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1453.402 ; gain = 450.359 ; free physical = 706 ; free virtual = 8560
+report_utilization: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1493.418 ; gain = 0.000 ; free physical = 705 ; free virtual = 8560
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 20:52:58 2016...

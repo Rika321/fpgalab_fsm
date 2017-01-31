@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue May 10 20:34:28 2016
+# Process ID: 32623
+# Current directory: /home/hequ2/cs233/hequ2/fpgalab4_fsm
+# Command line: vivado
+# Log file: /home/hequ2/cs233/hequ2/fpgalab4_fsm/vivado.log
+# Journal file: /home/hequ2/cs233/hequ2/fpgalab4_fsm/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.xpr
+INFO: [Project 1-313] Project file moved from '/home/hgao17/cs233/fpgalab4_fsm' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/software/xilinx-2015/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 5907.820 ; gain = 134.945 ; free physical = 674 ; free virtual = 9125
+close [ open /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_odd.v w ]
+add_files /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_odd.v
+update_compile_order -fileset sources_1
+close [ open /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_three.v w ]
+add_files /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.srcs/sources_1/new/counter_three.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 10 20:42:52 2016] Launched synth_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/runme.log
+[Tue May 10 20:42:52 2016] Launched impl_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 10 20:44:08 2016] Launched synth_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/runme.log
+[Tue May 10 20:44:08 2016] Launched impl_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737400A
+set_property PROGRAM.FILE {/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737400A
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:24 . Memory (MB): peak = 6000.824 ; gain = 0.000 ; free physical = 1283 ; free virtual = 9081
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 10 20:47:21 2016] Launched synth_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/runme.log
+[Tue May 10 20:47:22 2016] Launched impl_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737400A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737400A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737400A
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+close_hw
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 10 20:49:04 2016] Launched impl_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May 10 20:52:16 2016] Launched synth_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/synth_1/runme.log
+[Tue May 10 20:52:16 2016] Launched impl_1...
+Run output will be captured here: /home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183737400A
+set_property PROGRAM.FILE {/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/hequ2/cs233/hequ2/fpgalab4_fsm/fpgalab4_fsm.runs/impl_1/top_level.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183737400A
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 10 20:55:10 2016...
